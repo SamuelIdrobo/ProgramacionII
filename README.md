@@ -54,3 +54,47 @@ Un commit se crea añadiendo primero los cambios al staging area con git add y l
 **Git pull:** Descarga los cambios del repositorio remoto y los fusiona automáticamente con la rama actual, combinando en un solo paso la acción de git fetch y git merge.
 
 
+6. ¿Qué es un branch (rama) en Git y cómo Git gestiona los punteros a commits?
+
+**Branch (rama) en Git:**
+Una rama es un puntero móvil que señala a un commit específico dentro del historial del proyecto, permitiendo desarrollar nuevas funcionalidades o realizar cambios sin afectar la rama principal.
+
+**Gestión de punteros a commits:**
+Git administra las ramas como referencias que avanzan automáticamente al crear nuevos commits. Cada rama apunta al commit más reciente de su línea de desarrollo, y cada commit enlaza con sus commits padres, formando una secuencia o grafo de historial.
+
+
+7. ¿Cómo se realiza un merge y qué conflictos pueden surgir? ¿Cómo se resuelven?
+
+**Merge en Git:**
+La fusión (merge) combina los cambios de una rama con otra, integrando sus historiales. Se realiza ejecutando git merge nombre_rama desde la rama que recibirá los cambios.
+
+**Conflictos posibles:**
+Los conflictos surgen cuando un mismo archivo ha sido modificado en ambas ramas de forma incompatible, impidiendo que Git realice la fusión automática.
+
+**Resolución de conflictos:**
+Se editan manualmente los archivos en conflicto para decidir qué cambios conservar, se añaden nuevamente al staging area con git add y se completa la fusión con git commit.
+
+
+8. ¿Cómo funciona el área de staging (git add) y qué pasa si omito este paso?
+
+**Área de staging (git add):**
+El área de staging almacena temporalmente los cambios seleccionados para el próximo commit. El comando git add mueve modificaciones desde el working directory hacia esta área, permitiendo preparar de forma precisa qué se incluirá en la confirmación.
+
+**Que pasa si omito:**
+Si se omite git add, los cambios permanecerán en el working directory y no se incluirán en el siguiente commit, manteniéndose fuera del historial del proyecto hasta ser añadidos explícitamente.
+
+
+9. ¿Qué es el archivo .gitignore y cómo influye en el seguimiento de archivos?
+
+**Archivo .gitignore:**
+Archivo de texto que especifica patrones de nombres para que Git ignore determinados archivos o carpetas, evitando que se incluyan en el seguimiento y en los commits.
+
+
+Los elementos listados en .gitignore no se añaden al staging area ni se registran en el repositorio, lo que permite excluir archivos temporales, configuraciones locales o dependencias generadas automáticamente.
+
+
+10. ¿Cuál es la diferencia entre un "commit amend" (-amend) y un nuevo commit?
+
+- **git commit --amend:** Modifica el commit más reciente, permitiendo cambiar su mensaje, añadir nuevos cambios o reemplazar su contenido, sobrescribiendo su referencia en el historial.
+
+- **Nuevo commit:** Crea un registro adicional en el historial sin alterar commits previos, manteniendo intacta la secuencia existente.
