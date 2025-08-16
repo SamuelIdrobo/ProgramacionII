@@ -122,11 +122,11 @@ El comando git stash guarda temporalmente los cambios del working directory y de
 
 **Comandos clave:**
 
-  - git remote add nombre URL → Añade un remoto.
+    - git remote add nombre URL → Añade un remoto.
 
-  - git fetch nombre → Descarga cambios sin fusionar.
+    - git fetch nombre → Descarga cambios sin fusionar.
 
-  - git pull nombre rama → Descarga y fusiona cambios de un remoto.
+    - git pull nombre rama → Descarga y fusiona cambios de un remoto.
 
 
 14. ¿Cómo puedo inspeccionar el historial de commits (por ejemplo, git log, git diff, git show)?
@@ -136,3 +136,68 @@ El comando git stash guarda temporalmente los cambios del working directory y de
 - **it diff:** Muestra las diferencias entre commits, ramas o el estado actual y el último commit.
 
 - **git show:** Despliega los detalles completos de un commit específico, incluyendo cambios de archivos.
+
+
+### PROGRAMACION 
+
+15. ¿Cuáles son los tipos de datos primitivos en Java?
+
+
+| TIPO PRIMITIVO | TAMAÑO | TIPO |
+|:--------------:|:------:|:----:|
+| boolean        | ND | bbaoleean |
+| char        | 16 bits| Character |
+| byte        | 8 bits| Byte |
+| short        | 16 bits| Short |
+| int        | 32 bits| Integer |
+| long        | 64 bits| Long |
+| float        | 32 bits| Float |
+| double        | 64 bits| Double |
+| void        | ND | Void |
+
+
+
+16. ¿Cómo funcionan las estructuras de control de flujo como if, else, switch y bucles en Java?
+
+- **if / else / else if:** ejecutan bloques de código según condiciones lógicas.
+
+- **switch:** selecciona una acción entre varios casos posibles según el valor de una variable.
+
+- **while:** repite un bloque mientras la condición sea verdadera.
+
+- **do-while:** similar al while, pero garantiza al menos una ejecución.
+
+- **for:** repite un bloque un número conocido de veces.
+
+- **for-each:** recorre directamente arreglos o colecciones.
+
+
+17. ¿Por qué es importante usar nombres significativos para variables y métodos?
+
+Usar nombres significativos en variables y métodos es importante porque hace el código más legible, reduce errores, facilita el mantenimiento, mejora el trabajo en equipo y aporta auto-documentación sin necesidad de comentarios extras.
+
+18. ¿Qué es la Programación Orientada a Objetos (POO)?
+
+La Programación Orientada a Objetos (POO) es un paradigma de programación que organiza el software en torno a objetos, los cuales combinan atributos (datos) y métodos (comportamientos). Su objetivo es modelar elementos del mundo real de forma más natural, favoreciendo la modularidad, reutilización y mantenimiento del código.
+
+19. ¿Cuáles son los cuatro pilares de la Programación Orientada a Objetos?
+
+- **Encapsulamiento:** protege los datos de un objeto, controlando su acceso mediante métodos.
+
+- **Herencia:** permite crear nuevas clases a partir de otras, reutilizando atributos y métodos.
+
+- **Polimorfismo:** posibilita que un mismo método tenga diferentes comportamientos según el objeto que lo invoque.
+
+- **Abstracción:** simplifica la complejidad mostrando solo lo esencial y ocultando los detalles de implementación.
+
+20. ¿Qué es la herencia en POO y cómo se utiliza en Java?
+
+La herencia en POO es un mecanismo que permite crear nuevas clases basadas en otras existentes, reutilizando sus atributos y métodos. En Java se implementa con la palabra clave extends, donde una clase hija (subclase) hereda de una clase padre (superclase), pudiendo además añadir o sobrescribir comportamientos.
+
+21. ¿Qué son los modificadores de acceso y cuáles son los más comunes en Java?
+
+Los modificadores de acceso en Java controlan la visibilidad de clases, atributos y métodos: public (acceso total), private (solo dentro de la clase), protected (paquete y herencia) y default (solo en el mismo paquete).
+
+22. ¿Qué es una variable de entorno y por qué son importantes para Java o la programación en general?
+
+Una variable de entorno es un valor definido en el sistema operativo que influye en la ejecución de programas, por ejemplo indicando rutas o configuraciones. Son importantes porque permiten que Java y otras aplicaciones encuentren recursos como el PATH para ejecutar el compilador (javac) o el JAVA_HOME para ubicar la instalación de Java, facilitando la portabilidad, configuración y seguridad sin modificar el código fuente.
