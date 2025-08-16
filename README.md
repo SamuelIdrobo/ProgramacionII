@@ -98,3 +98,35 @@ Los elementos listados en .gitignore no se añaden al staging area ni se registr
 - **git commit --amend:** Modifica el commit más reciente, permitiendo cambiar su mensaje, añadir nuevos cambios o reemplazar su contenido, sobrescribiendo su referencia en el historial.
 
 - **Nuevo commit:** Crea un registro adicional en el historial sin alterar commits previos, manteniendo intacta la secuencia existente.
+
+
+11. ¿Cómo se utiliza git stash y en qué escenarios es útil?
+
+El comando git stash guarda temporalmente los cambios del working directory y del staging area sin confirmarlos, dejando el directorio limpio para realizar otras tareas. Es útil al cambiar de rama o actualizar el proyecto sin perder modificaciones en curso.
+
+
+12. ¿Qué mecanismos ofrece Git para deshacer cambios (por ejemplo, git reset, git revert, git checkout)?
+
+- **Git reset:** Mueve la referencia de la rama a un commit anterior, pudiendo descartar cambios del staging area o del working directory.
+
+- **Git revert:** Crea un nuevo commit que revierte los cambios introducidos por un commit específico, preservando el historial.
+
+- **Git checkout:** Restaura archivos individuales o cambia de rama, descartando modificaciones no confirmadas en los archivos seleccionados.
+
+
+13. ¿Cómo funciona la configuración de remotos (origin, upstream) y qué comandos uso para gestión de forks?
+
+- origin: Nombre por defecto para el repositorio remoto principal.
+
+- upstream: Nombre usado habitualmente para el repositorio original del que se hizo un fork.
+
+**Comandos clave:**
+
+  - git remote add nombre URL → Añade un remoto.
+
+  - git fetch nombre → Descarga cambios sin fusionar.
+
+  - git pull nombre rama → Descarga y fusiona cambios de un remoto.
+
+
+14. ¿Cómo puedo inspeccionar el historial de commits (por ejemplo, git log, git diff, git show)?
