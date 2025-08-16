@@ -116,9 +116,9 @@ El comando git stash guarda temporalmente los cambios del working directory y de
 
 13. ¿Cómo funciona la configuración de remotos (origin, upstream) y qué comandos uso para gestión de forks?
 
-- origin: Nombre por defecto para el repositorio remoto principal.
+- **origin:** Nombre por defecto para el repositorio remoto principal.
 
-- upstream: Nombre usado habitualmente para el repositorio original del que se hizo un fork.
+- **upstream:** Nombre usado habitualmente para el repositorio original del que se hizo un fork.
 
 **Comandos clave:**
 
@@ -130,3 +130,9 @@ El comando git stash guarda temporalmente los cambios del working directory y de
 
 
 14. ¿Cómo puedo inspeccionar el historial de commits (por ejemplo, git log, git diff, git show)?
+
+- **git log:** Lista los commits con información como autor, fecha y mensaje.
+
+- **it diff:** Muestra las diferencias entre commits, ramas o el estado actual y el último commit.
+
+- **git show:** Despliega los detalles completos de un commit específico, incluyendo cambios de archivos.
